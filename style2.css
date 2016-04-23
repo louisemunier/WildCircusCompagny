@@ -1,0 +1,689 @@
+@font-face
+{
+    font-family: 'BallparkWeiner';
+    src: url('polices/ballpark.eot');
+    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('polices/ballpark.woff') format('woff'),
+         url('polices/ballpark.ttf') format('truetype'),
+         url('polices/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'caviardreams';
+    src: url('polices/caviardreams.eot');
+    src: url('polices/caviardreams.eot?#iefix') format('embedded-opentype'),
+         url('polices/caviardreams.woff') format('woff'),
+         url('polices/caviardreams.ttf') format('truetype'),
+         url('polices/caviardreams.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face
+{
+    font-family: 'Comic';
+    src: url('polices/caviardreams.ttf') format('truetype'),
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Eléments principaux de la page */
+
+body
+{
+    background: url('https://github.com/louisemunier/WildCircusCompagny/blob/master/images/lined_paper.png?raw=true');
+    font-family: comic, 'caviardreams', Arial, Serif;
+    color: #181818;
+}
+
+#bloc_page
+{
+    width: 900px;
+    height: 1500px;
+    margin: auto;
+}
+
+section h1, footer h1, nav a
+{
+    font-family: 'caviardreams' Arial, serif;
+    font-weight: bold;
+}
+
+/* Header */
+header
+{
+    display: flex; ;
+    justify-content: center;
+}
+
+#headband
+{
+    width: 100%;
+    height: 100%;
+    background:  url('https://github.com/louisemunier/WildCircusCompagny/blob/master/images/headband.png?raw=true') repeat-x top;
+    position: absolute;
+    margin: auto;
+    left: 0px;
+    display: ;
+    opacity: 1;
+}
+
+
+#main_title
+{
+    display: inline-block;
+    flex-direction: column;
+}
+
+
+header h1 /*Titre principal*/
+{
+    font-family: 'BallparkWeiner', Arial, serif;
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 100px;
+    margin-top: 300px;
+    white-space: nowrap;
+    line-height: ;
+    width: 100%;
+    display: ;
+    text-align: center;
+   
+}
+
+#logo
+{
+    position: relative;
+    display: ;
+    left: 40%;
+    top: 80px;
+}
+
+/* Navigation */
+
+#navi
+{
+    width: 900px;
+    margin-left: -50px;
+}
+
+nav ul
+{
+    font-family: 'caviardreams', Arial, serif;
+    list-style-type: none;
+    display: flex;
+    white-space: nowrap;
+    text-align: ;
+    font-size: 0.8em;
+    justify-content: space-around;
+    width: 80%;
+    margin-top: 80px;
+    width: 100%;
+}
+
+nav a
+{
+    font-size: 1.8em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+    display: inline;
+}
+
+nav a:hover
+{
+    color: #FA0A0C;
+    border-bottom: 3px solid #FA0A0C;
+}
+
+ p
+{
+    font-family: Arial, serif;
+}
+/* Bannière */
+
+#img_banner
+{
+    margin-top: 15px;
+    height: 200px;
+    border-radius: 5px;
+    background: url('https://github.com/louisemunier/WildCircusCompagny/blob/master/images/clowns_acrobat2.jpg?raw=true') no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+}
+
+#text_banner
+{
+    position: absolute;
+    bottom: 0;
+    border-radius: 0px 0px 5px 5px;
+    width: 99.3%;
+    height: 33px;
+    padding-top: 8px;
+    padding-left: 8px;
+    background-color: rgba(24,24,24,0.8);
+    color: white;
+    font-size: 0.8em;
+    
+}
+
+.color_button
+{
+    height: 25px;
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    background: url('https://github.com/louisemunier/WildCircusCompagny/blob/master/images/color_button.png?raw=true') repeat-x;
+    border: 1px solid #BA6E09;
+    border-radius: 2px;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 3px 8px 0px 8px;
+    color: black;
+    opacity: 1;
+    text-decoration: none;
+}
+
+/* Corps */
+
+section
+{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+article, aside
+{
+    text-align: justify;
+}
+
+article
+{
+    margin-left: 10px;
+    flex: 3;
+}
+
+#short_description
+{
+    vertical-align: middle;
+    margin-left: 8px;
+
+}
+
+article p
+{
+    font-size: 1em;
+}
+
+#description_text p
+{
+    font-family: Century Schoolbook, Comic, serif;
+    font-style: italic;
+}
+
+#testimonials_text
+{
+    
+    position: relative;
+    background-color: none;
+    border-right: 1px dashed #ababa9;
+    border-radius: 5px;
+    padding: 10px;
+    color: black;
+    font-size: 0.8em;
+    overflow: auto;
+    width: 200px;
+
+}
+
+#testimonials_text h1 p
+{
+    margin-top: 50px;
+}
+
+#testimonials_text h1
+{
+    text-align: center;
+}
+
+#testimonials_text p
+{
+    font-size: 0.8em;
+    font-family: Century Schoolbook, Arial, serif;
+}
+
+#logo_testi
+{
+    display: flex;
+    margin: auto;
+}
+
+
+aside, img
+{
+    margin-right: 5px;
+}
+
+#container
+{
+    border: none;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: flex-start;
+}
+
+#performance1 p
+{
+    max-width: 230px;
+    font-family: Century Schoolbook, Arial, serif;
+    font-style: italic;
+}
+
+#performance1
+{
+    border-radius: 5px;
+    box-shadow: 0 3px 3px #868787;
+    background-color: #c7ccc6;
+    width: 47%;
+    height: 160px;
+    margin: 6px 6px 6px 6px;
+    color: black;
+    text-align: left;
+    padding: 8px 8px 8px 15px;
+    position: relative;
+    font-size: 14px;
+    white-space: normal;
+    overflow: auto;
+}
+
+#performance_image1
+{
+    position: absolute; 
+    border-radius: 5px;
+    border: 2px inset #818480;
+    width: 180px;
+    height: 120px;
+    top: 10px;
+    left: 250px;
+    display: ;
+}
+
+
+#performance2 p
+{
+    max-width: 280px;
+    font-family: Century Schoolbook, Arial, serif;
+    font-style: italic;
+}
+
+#performance2
+{
+    border-radius: 5px;
+    box-shadow: 0 3px 3px #868787;
+    background-color: #c7ccc6;
+    width: 47%;
+    height: 160px;
+    margin: 6px 6px 6px 6px;
+    color: black;
+    padding: 8px 8px 8px 15px;
+    font-size: 14px;
+    position: relative;
+    white-space: normal;
+    overflow: auto;
+}
+
+#performance_image2
+{
+    position: absolute; 
+    border-radius: 5px;
+    border: 2px inset #818480;
+    width: 100px;
+    height: 150px;
+    top: 10px;
+    right: 5px;
+    display: ;
+
+}
+
+#container2
+{
+    border: none;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    align-items: flex-start;
+    position: relative;
+}
+
+#performance3 p
+{
+    max-width: 300px;
+    font-family: Century Schoolbook, Arial, serif;
+    font-style: italic;
+}
+
+#performance3
+{
+    border-radius: 5px;
+    box-shadow: 0 3px 3px #868787;
+    background-color: #c7ccc6;
+    width: 46%;
+    height: 160px;
+    margin: 6px 6px 6px 6px;
+    color: black;
+    padding: 8px 8px 8px 15px;
+    margin-bottom: auto;
+    font-size: 14px;
+    position: relative;
+    white-space: normal;
+    overflow: auto;
+}
+
+#performance_image3
+{
+    position: absolute; 
+    border-radius: 5px;
+    border: 2px inset #818480;
+    padding: 0px;
+    width: 100px;
+    height: 150px;
+    top: 17px;
+    left: 325px;
+    display: ;
+}
+
+#performance4 p
+{
+    width: 70%;
+    font-family: Century Schoolbook, Arial, serif;
+    font-style: italic;
+}
+
+#performance4
+{
+    border-radius: 5px;
+    box-shadow: 0 3px 3px #868787;
+    background-color: #c7ccc6;
+    width: 47%;
+    height: 180px;
+    margin: 6px 6px 6px 6px;
+    color: black;
+    padding: 8px 8px px 15px;
+    margin-bottom: auto;
+    font-size: 14px;
+    position: relative;
+    white-space: normal;
+    overflow: auto;
+    display: none;
+}
+
+#performance_image4
+{
+    position: absolute; 
+    border-radius: 5px;
+    border: 2px inset #f9ba67;
+    padding: 5px;
+    width: 100px;
+    height: 150px;
+    top: 15px;
+    left: 300px;
+    display: none;
+}
+
+/* Footer */
+
+footer
+{
+    display: flex;
+    background:  url('') no-repeat top center, url('https://github.com/louisemunier/WildCircusCompagny/blob/master/images/separateur.png?raw=true') repeat-x top;
+    padding-top: 50px;
+    position: relative;
+}
+
+#logo_bottom
+{
+    width: 47px;
+    height: 55px;
+    position: absolute;
+    top: -15px;
+    left: 415px;
+}
+
+footer p, 
+{
+    font-size: 0.8em;
+}
+
+footer h1
+{
+    font-size: 1.1em;
+}
+
+#container3
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 250px;
+    justify-content: space-between;
+    border: none;
+    text-align: center;
+}
+
+#connection 
+{
+    border-right: 1px dashed #ababa9;
+    width: 320px;
+    font-size: 1em;
+    padding-right: 5px;
+}
+
+#connection h1
+{
+    text-align: center;
+    font-size: 1.3em;
+}
+#connection p
+{
+    text-align: justify;
+    font-size: 1em;
+    font-family: Century Schoolbook, Arial, serif;
+}
+
+#btn
+{
+    display: flex;
+    justify-content: space-around;
+}
+#btn_login
+{
+    width: 70px;
+    height: 30px;
+    font-size: 0.8em;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: #63f74b;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 15px;
+    color: black;
+}
+
+
+#btn_create
+{
+    width: 110px;
+    height: 40px;
+    font-size: 0.8em;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: #f7bc68;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 5px;
+    color: black;
+}
+
+#popup
+{
+    background: #ffffff;
+    height: 140px;
+    width: 200px;
+    border: 2px dotted #f4b50c;
+    padding: 10px 10px 10px 10px;
+    display: none;
+    z-index: 2;
+    position: absolute;
+    right: 390px;
+    top: 200px;
+}
+
+#popup2
+{
+    background: #ffffff;
+    height: 350px;
+    width: 200px;
+    border: 2px dotted #f4b50c;
+    padding: 10px 10px 10px 10px;
+    display: none;
+    z-index: 2;
+    position: absolute;
+    right: 390px;
+    top: 200px;
+}
+
+#close_popup
+{
+    margin-left: 180px;
+}
+
+#close_popup2
+{
+    margin-left: 180px;
+}
+
+#ok
+{
+margin-left: 80px;
+}
+
+#background
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #000000;
+    display: none;
+    z-index: 1;
+}
+
+#follow
+{
+    width: 70px;
+    font-size: 1em;
+    margin: 0 15px 15px 0;
+    justify-content: center;
+
+}
+#follow h1
+{
+    text-align: center;
+    white-space: nowrap;
+    justify-content: center;
+    font-size: 1.3em;
+}
+#follow img
+{
+    margin-left: 15px;
+}
+
+#img_twitter
+{
+    box-shadow: 0 2px 3px grey;
+}
+
+#img_facebook
+{
+    box-shadow: 0 2px 3px grey;
+}
+
+#img_youtube
+{
+    box-shadow: 0 2px 3px grey;
+}
+
+#img_instagram
+{
+    box-shadow: 0 2px 3px grey;
+}
+
+#img_rss
+{
+    box-shadow: 0 2px 3px grey;
+}
+
+#contact
+{
+    border-right: 1px dashed #ababa9;
+    width: 380px;
+    vertical-align: baseline;
+}
+
+#contact section
+{
+    width: 340px;
+    text-align: justify;
+    font-size: 1em;
+}
+
+#contact section h1
+{
+    text-align: center;
+    font-size: 1.3em;
+    top: 0;
+}
+
+#contact p
+{
+    font-size: 1em;
+    font-family: Century Schoolbook, Arial, serif;
+}
+#message 
+{
+    display: flex;
+}
+
+label
+{
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+#email
+{
+    display: flex;
+}
+
+#first_name
+{
+    display: flex;
+}
+
+#name
+{
+    display: flex;
+}

@@ -1,2 +1,6 @@
 # WildCircusCompagny
-One website Page to a project WCS 
+Entry exercise to the Wild Code School.
+
+Goals :
+- learn basic html and css
+- create one web page width specific elements
